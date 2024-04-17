@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement PayPal</title>
+</head>
+<body>
+    <h1>Paiement PayPal</h1>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="@SKSHOP.com">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="text" name="amount" placeholder="Montant à payer (EUR)">
+        <input type="submit" value="Payer avec PayPal">
+    </form>
+	<a href="explorer.html"> Revenir à l'accueil </a>
+</body>
+</html>

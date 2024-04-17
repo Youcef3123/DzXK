@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZxKZ</title>
+    <link href="style.css" rel="stylesheet"> <!-- Utilisation d'un fichier de style externe -->
+    <style>
+        /* Mettez vos styles personnalisés ici */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Couleur de fond légère */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* Ajout de position relative pour le positionnement du bouton de contact */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em; /* Augmentation de la taille de police */
+        }
+
+        .contact-btn {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%); /* Positionnement vertical centré */
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .promo {
+            background-color: #ffc107;
+            color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 50px auto;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+        }
+
+        .promo code {
+            font-family: monospace;
+            background-color: #333;
+            color: #ffc107;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .explore-btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Ajout d'une transition au survol */
+        }
+
+        .explore-btn:hover {
+            background-color: #0056b3; /* Changement de couleur au survol */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DZxKZ</h1>
+        <a href="contact.html" class="contact-btn">Contact</a> <!-- Modification du bouton pour rediriger vers contact.html -->
+    </header>
+
+    <main>
+        <h2>Bienvenue sur le shop DZxKZ</h2>
+        <p>Découvrez toutes nos offres sur un tas de choses !</p>
+        <p>Apprenez même la cybersécurité</p>
+        <a href="explorer.html" class="explore-btn">Explorer</a>
+    </main>
+
+    <footer>
+        <div class="promo">
+            Utilisez le code promo <code>DZ</code> pour obtenir une réduction de 5% sur votre prochain achat!
+        </div>
+    </footer>
+</body>
+</html>

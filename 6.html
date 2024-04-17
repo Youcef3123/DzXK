@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom du Produit</title>
+    <style>
+        /* Mettez vos styles personnalisés ici */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .product img {
+            max-width: 50%;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .payment-methods {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .payment-methods-text {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .payment-methods a {
+            margin: 0 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .payment-methods a:hover {
+            transform: scale(1.1); /* Effet de survol pour agrandir l'icône */
+        }
+
+        .payment-methods img {
+            max-width: 100px;
+            cursor: pointer;
+        }
+
+        .promo-code {
+            margin-top: 20px;
+        }
+
+        .promo-code input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .promo-code input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .discount-message {
+            display: none;
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product">
+            <img src="image/ebook.png" alt="Nom du Produit">
+            <div class="product-info">
+                <h2>Ebook</h2>
+                <p>Voici un ebbok realiser par nous, tu pourras apprendre a avoir l'informatique comme recuperer l'ip de uelqu'un, acces a sa carte graphique, a ses photos, bref a son pc.</p>
+                <p class="price">Prix : 60€</p>
+                <p>Livraison gratuite</p>
+                <div class="payment-methods">
+                    <div class="payment-methods-text">Méthodes de paiement :</div>
+                    <a href="cb.html"><img src="image/cb.png" alt="Carte Bancaire"></a>
+                    <a href="paypal.html"><img src="image/paypal.png" alt="PayPal"></a>
+                </div>
+                <div class="promo-code">
+                    <form id="promo-form">
+                        <input type="text" name="promo" id="promo-input" placeholder="Code promo">
+                        <input type="submit" value="Appliquer">
+                    </form>
+                </div>
+                <div class="discount-message">La réduction a été appliquée avec succès !</div>
+            </div>
+        </div>
+		<a href="explorer.html"> Revenir à l'accueil </a>
+    </div>
+	<a href="explorer.html"> Revenir à l'accueil </a>
+
+    <script>
+        var discountApplied = false; // Variable pour vérifier si la réduction a déjà été appliquée
+
+        document.getElementById('promo-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            applyPromoCode();
+        });
+

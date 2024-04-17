@@ -1,0 +1,12 @@
+body {
+  font-family : Arial, Helvetica, sans-serif ;
+  line-height : 150% ;
+  color : black ;
+  background-color : #A0A0A0 ;
+  background-image : url("Images/musk4.jpeg") ;
+  background-size: cover ;
+}
+
+ { 
+  color : #FF0000 ; 
+}
